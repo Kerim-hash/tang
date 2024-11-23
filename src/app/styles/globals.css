@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #F5F5F7;
+}
+
+@media (max-width: 768px){
+    .container {
+        padding: 0 15px;
+}
+}
+.motion-element {
+    will-change: opacity, transform;
+  }

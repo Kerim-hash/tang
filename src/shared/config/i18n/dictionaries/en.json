@@ -1,0 +1,318 @@
+{
+  "common": {
+    "GetAConsultation": "Get a consultation",
+    "contact": "Contact",
+    "RequestConsultation": "Get a consultation",
+    "RequestConsultationSupTitle": "We will be happy to answer your questions",
+    "License": "Clinic licenses"
+  },
+  "nav": ["Families", "Become a surrmother", "Egg donation", "About the clinic", "Contacts"],
+  "family": {
+    "hero": {
+      "title": "Surrogacy Center motherhood",
+      "desc": "high quality, comfortable and safe"
+    },
+    "about": {
+      "title": "What is surrogacy?",
+      "articles": [
+        "Surrogacy is a method to overcome infertility in which a woman (the surrogate mother) takes on the responsibility of carrying and giving birth to a child with whom she has no genetic connection, for a couple or individual who will become the legal parents of the child after birth.",
+        "The creation of an embryo for transfer to the surrogate mother is carried out through in vitro fertilization (IVF) using the biological parents' reproductive cells.",
+        "According to legal regulations, a surrogate mother cannot have a genetic relationship with the child. Therefore, the surrogate mother is not permitted to also serve as an egg donor within the program."
+      ],
+      "desc": "Quality of a candidate for participation in the Surrogacy program",
+      "conditions": [
+        {
+          "title": "Age",
+          "desc": "The candidate must be between 21 and 35 years old, as this is the safest period for pregnancy and childbirth."
+        },
+        {
+          "title": "Having your own child",
+          "desc": "It is necessary to have at least one healthy child born without complications, which confirms the woman's ability to successfully go through pregnancy and childbirth"
+        },
+        {
+          "title": "No cesarean section",
+          "desc": "There must be no information about the child being born by caesarean section"
+        },
+        {
+          "title": "Rhesus factor",
+          "desc": "A positive Rh factor is required."
+        },
+        {
+          "title": "Physical and mental health",
+          "desc": "The candidate must be in good physical and mental condition, without chronic diseases and medical contraindications for bearing a child."
+        },
+        {
+          "title": "Absence of deprivation of parental rights",
+          "desc": "The candidate should not have any problems with the guardianship authorities and there should be no deprivation of parental rights in her biography."
+        },
+        {
+          "title": "Honesty before the law",
+          "desc": "No criminal record and no status of suspect or accused in a criminal case"
+        }
+      ]
+    },
+    "video": {
+      "firstBlock": "Video interview with surrogate mother",
+      "secondBlock": "Video interview with a lawyer"
+    },
+    "info": {
+      "infoBlock": [
+        {
+          "title": "To biological parents",
+          "desc": [
+            "Our surrogacy center offers a wide range of programs for couples and single women who dream of having a child.",
+            "We provide comprehensive solutions that consider all aspects of reproductive technologies and ensure complete confidentiality of information about the biological parents."
+          ]
+        },
+        {
+          "title": "To biological parents",
+          "desc": [
+            "Our programs cover all key stages—from organizational to medical and legal—without long waiting periods.",
+            "One of our top priorities is achieving a successful outcome. We do everything possible to ensure that the pregnancy and birth process takes place in the most comfortable conditions."
+          ]
+        }
+      ],
+      "information": [
+        "Selection of surrogate mother-without waiting",
+        "Management of pregnancy and childbirth in the best clinic",
+        "Organization of Nutrition and Accommodation for the Surrogate Mother",
+        "Monitoring at All Stages of the Program",
+        "Comprehensive Legal Support",
+        "100% confidentiality guaranteed"
+      ]
+    },
+    "programStages": {
+      "title": "Program stages",
+      "data": [
+        {
+          "title": "Contract Signing",
+          "desc": "At the initial consultation, Genetic parents become more familiar with the content of the Center's programs and their main stages. At the initial consultation, Genetic parents become more familiar with the content of the Center's programs and their main stages."
+        },
+        {
+          "title": "Contract Signing",
+          "desc": "After selecting the appropriate program, the genetic parents sign a contract with the Center, which then begins searching for a candidate to serve as the surrogate mother and prepares her for embryo transfer according to the schedule specified in the contract."
+        },
+        {
+          "title": "Medical Screening",
+          "desc": "Before joining the program, the surrogate candidate must undergo a medical examination. The Center organizes this screening at medical facilities. If the tests and examination results are favorable, which will be communicated to the genetic parents, the candidate receives final approval."
+        },
+        {
+          "title": "Contract with the Surrogate Mother",
+          "desc": "The Center prepares a personalized surrogacy agreement with the surrogate mother, acting on behalf of either the Center or the genetic parents."
+        },
+        {
+          "title": "Preparation of the Surrogate Mother for Embryo Transfer",
+          "desc": "Based on the screening results, the reproductive specialist prescribes medications for the surrogate candidate to prepare her endometrium for embryo transfer (hormonal therapy)."
+        },
+        {
+          "title": "Embryo Transfer",
+          "desc": "On the appointed day, the embryo is transferred to the surrogate mother’s uterus. At 6-8 weeks of pregnancy, an ultrasound is performed to confirm successful implantation and detect the fetal heartbeat, marking the onset of pregnancy."
+        },
+        {
+          "title": "Pregnancy Care for the Surrogate Mother",
+          "desc": "During the entire pregnancy, the surrogate mother lives in a specialized apartment. A coordinator from the Center is assigned to ensure compliance with doctor’s instructions, a proper regimen, nutrition, and to assist with daily needs and leisure activities. The surrogate mother undergoes regular medical check-ups and is provided with necessary medications if needed."
+        },
+        {
+          "title": "Documentation for the Newborn",
+          "desc": "After the baby’s birth, the Center arranges for the notarized consent of the surrogate mother to list the genetic parents as the legal parents on the birth certificate and confirms the surrogate’s absence of any claims."
+        }
+      ]
+    },
+    "law": {
+      "title": "In our country, surrogacy is safe and regulated by law",
+      "supTitle": "Family Code of the Kyrgyz Republic"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Helping to build families",
+      "desc": "quality, comfort and safety"
+    },
+    "info": [
+      {
+        "title": "Experience and professionalism",
+        "desc": "Our clinic has many years of experience in the field of reproductive technologies. A team of doctors, lawyers and psychologists specializing in surrogacy ensures high standards of quality and professionalism at every stage of the program."
+      },
+      {
+        "title": "Individual approach",
+        "desc": "We take into account all the needs and wishes of our clients. An individual program is developed for each family, starting with the selection of a surrogate mother and ending with legal support at all stages."
+      },
+      {
+        "title": "Legal security",
+        "desc": "Our specialists provide full legal protection for all parties, accompanying the process from start to finish. All agreements are formalized in accordance with the law, which guarantees the protection of the rights of both the parents and the surrogate mother."
+      },
+      {
+        "title": "Modern technologies",
+        "desc": "The clinic is equipped with advanced technology and equipment for diagnosis, fertilization and monitoring of the pregnancy process. We use the latest techniques, which increases the chances of a successful pregnancy and healthy birth."
+      },
+      {
+        "title": "Comprehensive support",
+        "desc": "At all stages of the program, parents and surrogate mothers receive comprehensive support. Medical assistance, psychological counseling, legal support - we create comfortable conditions for all participants in the process."
+      },
+      {
+        "title": "Privacy",
+        "desc": "We strictly respect confidentiality and guarantee complete privacy to every client. Data is protected at all levels and your personal information remains completely confidential."
+      }
+    ],
+    "about": {
+      "title": "TANG IVF",
+      "desc": "is a Family Planning and Infertility Center that uses American reproductive technologies to help you realize your dream of becoming parents as soon as possible."
+    },
+    "director": {
+      "supTitle": " Welcome to TANG Medical Center and thank you for considering us as a partner in helping you create the family you desire.",
+      "desc": [
+        "We do our best to provide you with the knowledge, advanced technology and the latest medical advances in fertility treatment to maximize your chances of pregnancy.",
+        "Our clinic is licensed in accordance with the regulations of the Ministry of Health of the Kyrgyz Republic as an assisted reproductive center. Our primary goal is to provide the best service combined with a sincere commitment and dedication to individualized and compassionate care. We pride ourselves on paying attention to detail, being accessible and deeply empathizing with each patient.",
+        "Our state-of-the-art laboratory is equipped with the latest and most reliable equipment, fully compliant with management requirements and international best practice.",
+        "Our clinic's philosophy is to provide excellent care with a personalized and compassionate approach, so that your journey to parenthood is stress-free and any physical discomfort and disruption in your life is minimized.",
+        "Our medical team of experienced fertility specialists, embryologists, nurses and allied health professionals work cohesively to ensure you have a positive experience. Together, we will overcome all challenges, and our dedicated team will help fulfill your most sincere desires to start a family.",
+        "Contact or come see us for a personal consultation. We are always happy to provide you with the information you need. We hope to meet you soon!"
+      ],
+      "name": "Hu Deyu",
+      "position": "Hu Deyu, CEO of TANG Medical Center"
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "supTitle": "You can contact us in a number of ways"
+  },
+  "eggDonation": {
+    "hero": {
+      "title": "Egg donation - give a chance for happiness"
+    },
+    "about": {
+      "title": "What is egg donation?",
+      "desc": "Egg donation is a noble opportunity to help those who dream of having children but cannot have them for medical reasons. By joining the program, you can give the joy of motherhood to others while receiving a full medical examination and compensation.",
+      "supTitle": "Who can become a donor?",
+      "underTitle": "You must meet a few basic criteria to qualify for the program:",
+      "list": [
+        "Ages 20 to 35.",
+        "Good physical and mental health.",
+        "Absence of hereditary diseases and bad habits.",
+        "Having a healthy child of your own is an advantage."
+      ]
+    },
+    "stages": {
+      "title": "Stages of the program",
+      "stagesList": [
+        {
+          "title": "Initial consultation and application",
+          "desc": "Our experts will explain the program, answer your questions, and conduct an initial assessment."
+        },
+        {
+          "title": "Selecting a questionnaire",
+          "desc": "If your profile is of interest to the family, a manager will contact you and invite you to the clinic to join the program."
+        },
+        {
+          "title": "Medical examination",
+          "desc": "A set of tests and exams to assess your health and readiness for donation."
+        },
+        {
+          "title": "Legal formalization",
+          "desc": "Signing a contract that protects your rights and privacy."
+        },
+        {
+          "title": "Oocyte retrieval procedure",
+          "desc": "The procedure is carried out under anesthesia, takes a few minutes, and the next day you can return to your usual life."
+        },
+        {
+          "title": "Embryo transfer",
+          "desc": "A course of drugs to increase the number of eggs and prepare the recipient's endometrium for the implantation of a fertilized egg."
+        }
+      ]
+    }
+  },
+  "becomeSurrogateMother": {
+    "hero": {
+      "title": "How to become a surrogate mother",
+      "desc": "Becoming a surrogate mother is an opportunity not only to help a family find happiness, but also to receive meaningful support and compensation. We accompany surrogate mothers at every stage, guaranteeing complete safety and care."
+    },
+    "about": {
+      "title": "We Care for You Every Step of the Way",
+      "desc": [
+        "Each surrogate mother is unique to us, and we are genuinely grateful for her willingness to help. We surround you with care and attention to make this journey as smooth and positive as possible.",
+        "You are part of a team creating a miracle. Together, we help fulfill the dream of parenthood for those who have been waiting a long time. Your contribution is invaluable, and we’ll do everything to ensure you feel important and supported."
+      ]
+    },
+    "stages": {
+      "title": "Program Stages",
+      "desc": "Our program includes several key stages, ensuring your safety and support at every step.",
+      "supTitle": "Examinations for entry into the program",
+      "desc1": "In order to participate in a surrogacy program, it is important to make sure you are healthy and ready to carry a child. All exams are organized and paid for by the clinic and are done at a time that is convenient for you. Key steps include:",
+      "stagesProgram": [
+        {
+          "title": "Consultation and Application",
+          "desc": "Initial meeting with a coordinator to discuss all program details"
+        },
+        {
+          "title": "Medical Examination",
+          "desc": "A comprehensive health check to confirm eligibility for the program"
+        },
+        {
+          "title": "Legal Arrangements",
+          "desc": "Signing an agreement that protects your rights and interests throughout the process"
+        },
+        {
+          "title": "Family Selection",
+          "desc": "A joint selection of biological parents for a comfortable partnership"
+        },
+        {
+          "title": "IVF and Embryo Transfer",
+          "desc": "Continuous medical supervision and support throughout the pregnancy"
+        },
+        {
+          "title": "Pregnancy Care",
+          "desc": "Ongoing medical assistance and financial support during each stage of pregnancy"
+        },
+        {
+          "title": "Delivery and Program Completion",
+          "desc": "After the child is born, they are entrusted to the biological parents, concluding the program"
+        },
+        {
+          "title": "Payment Completion",
+          "desc": "Full and guaranteed completion of all compensation"
+        }
+      ],
+      "stagesList": [
+        {
+          "title": "General medical examination",
+          "desc": "The doctor will assess your health, perform a physical exam, and take a medical history"
+        },
+        {
+          "title": "Blood and urine tests",
+          "desc": "Standard tests to detect possible infections and assess the general condition of the body"
+        },
+        {
+          "title": "Gynecological examination",
+          "desc": "swab from the external pharynx of the cervix, vaginal vault, urethra"
+        },
+        { 
+          "title": "Hormone tests",
+          "desc": "Hormone tests can help confirm your ability to carry a pregnancy to term."
+        },
+        {
+          "title": "Psychological counseling",
+          "desc": "A conversation with a psychologist to confirm your psychological readiness for the program."
+        },
+        {
+          "title": "Examinations as indicated",
+          "desc": "Additional tests may be ordered if necessary to rule out any risks."
+        }
+      ]
+    },
+    "contactUs":{
+      "title": "Contact us",
+      "desc": "If you still have questions or want to learn more about the surrogacy program, our team is here to help. We will answer any questions, explain all the steps, conditions and provide full information about the process."
+    },
+    "accreditation": {
+      "title": "The partner clinic is accredited by the American College of Embryology (ACE).",
+      "desc": "In addition to all the above-mentioned irrefutable advantages, the partner clinic is accredited by the American College of Embryology (ACE), which indicates that the partner clinic relies in its activities on the scientific base of world-class professors. The partner clinic participates in international conferences and carries out its medical activities according to the advanced standards of the college"
+    }
+  },
+  "footer": {
+    "subtitles": ["Office", "Work schedule", "We are on social networks"],
+    "office": "c. Bishkek. Pervomaisky district. ul. M. Gorky 129",
+    "schedule": "Mon-Fri 9:00-18:00",
+    "scheduleInfo": "Calls and inquiries are accepted during business hours"
+  }
+}
