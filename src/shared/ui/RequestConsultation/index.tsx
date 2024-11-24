@@ -56,7 +56,7 @@ const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean, st
             transition={{ duration: 0.3 }}
           >
             <motion.div
-              className="bg-white p-6 rounded-2xl w-full sm:w-96"
+              className="bg-white p-6 rounded-2xl w-full sm:w-96 modal-content"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
@@ -165,6 +165,40 @@ const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean, st
           </motion.div>
         )}
       </AnimatePresence>
+
+      <style jsx>{`
+        /* Модальное окно растягивается на всю высоту экрана */
+        .modal-content {
+          height: 100vh; /* Растягиваем на 100% высоты */
+          overflow-y: auto; /* Включаем прокрутку только в случае необходимости */
+        }
+
+        /* Адаптивные стили для мобильных устройств */
+        @media (max-width: 640px) {
+          .bg-white {
+            height: 100%;
+            max-height: 100vh;
+            overflow-y: auto;
+          }
+
+          .fixed {
+            position: fixed;
+          }
+
+          .p-6 {
+            padding: 16px;
+          }
+
+          .sm\\:w-96 {
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .z-50 {
+            z-index: 50;
+          }
+        }
+      `}</style>
     </div>
   );
 };
