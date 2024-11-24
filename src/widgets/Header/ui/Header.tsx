@@ -1,9 +1,11 @@
-import React, { FC, useEffect, useRef, useState } from "react";
-import Logo from '@/assets/Logo.svg';
+import React, { FC, useEffect, useState, useRef } from "react";
+import { usePathname } from 'next/navigation';
+import Logo from "@/assets/Logo.svg";
 import Image from "next/image";
 import { useDictionary } from "@/shared/lib/hooks";
 import Link from "next/link";
 import clsx from "clsx";
+import { LanguageSwitcher } from "@/shared/ui";
 
 const Header: FC = () => {
   const { dictionary, lang } = useDictionary();
@@ -11,19 +13,31 @@ const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Состояние для бургер-меню
   const menuRef = useRef<HTMLDivElement>(null); // Ссылка на мобильное меню
 
-  const navigation = [
-    { name: dictionary.nav, link: '' },
-    { name: dictionary.nav, link: 'become-surrogate-mother' },
-    { name: dictionary.nav, link: 'egg-donation' },
-    { name: dictionary.nav, link: 'about' },
-    { name: dictionary.nav, link: 'contacts' },
-  ];
+  // Флаг для проверки рендера на клиенте
+  const [isClient, setIsClient] = useState(false);
+
+  // Инициализация router только после рендера на клиенте
+  useEffect(() => {
+    setIsClient(true); // Устанавливаем флаг после рендера на клиенте
+  }, []);
+
+  // Только на клиенте доступен router
+  const router = usePathname();
+  const normalizedPath = router.replace(/\/$/, ""); // Убираем слэш в конце пути
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setCurrentPath(window.location.pathname.replace(/\/$/, ""));
+    if (isClient) {
+      setCurrentPath(normalizedPath); // Обновляем текущий путь на клиенте
     }
-  }, []);
+  }, [isClient, normalizedPath]);
+
+  const navigation = [
+    { name: dictionary.nav, link: "" },
+    { name: dictionary.nav, link: "become-surrogate-mother" },
+    { name: dictionary.nav, link: "egg-donation" },
+    { name: dictionary.nav, link: "about" },
+    { name: dictionary.nav, link: "contacts" },
+  ];
 
   useEffect(() => {
     // Функция для проверки клика вне меню
@@ -46,12 +60,19 @@ const Header: FC = () => {
     };
   }, [isMenuOpen]);
 
+  if (!isClient) {
+    return null; // Пока компонент не отрендерен на клиенте, ничего не показываем
+  }
+
   return (
     <header className="py-4 border-b border-[#DDDDDF] bg-background">
       <div className="wrapper container flex justify-between items-center">
         {/* Логотип и кнопка-бургер */}
-        <div className="flex items-center gap-8 justify-around md:justify-between  lg:justify-normal w-full lg:w-auto">
-          <Image src={Logo} alt="logo" />
+        <div className="flex items-center gap-8 justify-around md:justify-between lg:justify-normal w-full lg:w-auto">
+          <Link href={`/${lang}/`}><Image src={Logo} alt="logo" /></Link>
+          <div className="hidden md:block">
+          <LanguageSwitcher />
+          </div>
           <button
             className="lg:hidden block p-2 text-primary"
             onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -116,7 +137,7 @@ const Header: FC = () => {
               +996 556 668 989
             </a>
             <nav className="flex gap-4">
-              {['РУ', 'КЫР', 'EN', '中文'].map((item) => (
+              {["РУ", "КЫР", "EN", "中文"].map((item) => (
                 <button
                   key={item}
                   className="text-secondary text-base font-openSans hover:text-primary"
@@ -150,7 +171,9 @@ const Header: FC = () => {
           })}
         </nav>
         <div className="flex items-center gap-8">
-          <Link href="./" className="btn btn-primary">{dictionary.common.contact}</Link>
+          <Link href="./" className="btn btn-primary">
+            {dictionary.common.contact}
+          </Link>
         </div>
       </div>
     </header>

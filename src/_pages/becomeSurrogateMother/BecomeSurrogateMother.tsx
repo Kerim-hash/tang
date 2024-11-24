@@ -11,6 +11,8 @@ import ContactUs from "./sections/contactUs";
 import Accreditation from "./sections/accreditation";
 import Licenses from "@/shared/ui/licenses";
 import License from "./sections/license";
+import GeneralInformation from "./sections/generalInformation";
+import Anchor from "./sections/anchor";
 
 const BecomeSurrogateMotherPage = () => {
   const { dictionary } = useDictionary()
@@ -18,6 +20,8 @@ const BecomeSurrogateMotherPage = () => {
   return <div>
     <Hero dictionary={dictionary} />
     <Description dictionary={dictionary} />
+    <Anchor dictionary={dictionary} />
+    <GeneralInformation dictionary={dictionary} />
     <div className='container mt-[60px] md:mt-[100px]'>
       <RequestConsultation dictionary={dictionary} />
     </div>

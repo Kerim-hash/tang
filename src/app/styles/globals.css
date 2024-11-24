@@ -5,8 +5,11 @@
 body{
     background: #F5F5F7;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
-@media (max-width: 768px){
+@media (max-width: 1025px){
     .container {
         padding: 0 15px;
 }

@@ -12,38 +12,25 @@ const LanguageSwitcher = () => {
   const currentLocale = useMemo(() => pathname.split('/')[1], [pathname]);
 
   // Обработчик смены языка
-  const handleLocaleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = event.target.value;
+  const handleLocaleChange = (newLocale: string) => {
     const newPathname = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
     push(newPathname);
   };
 
   return (
-    <div className="relative inline-block">
-      <select
-        value={currentLocale || defaultLocale}
-        onChange={handleLocaleChange}
-        className="appearance-none bg-transparent border border-[#DDDDDF] px-3 py-1 pr-8 cursor-pointer rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none"
-      >
-        {locales.map(({ code }) => (
-          <option key={code} value={code}>
-            {code}
-          </option>
-        ))}
-      </select>
-      <span className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          className="w-4 h-4 text-gray-700"
+    <nav className="flex gap-4">
+      {locales.map(({ code }) => (
+        <button
+          key={code}
+          className={`uppercase text-base font-openSans hover:text-primary ${
+            currentLocale === code ? 'text-primary' : 'text-secondary'
+          }`}
+          onClick={() => handleLocaleChange(code)} // Change language on button click
         >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-      </span>
-    </div>
+          {code}
+        </button>
+      ))}
+    </nav>
   );
 };
 

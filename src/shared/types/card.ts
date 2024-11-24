@@ -3,4 +3,5 @@ export interface CardInterface {
     title: string,
     desc: string,
     className?: string; 
+    opposite?: boolean;
 }

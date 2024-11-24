@@ -51,7 +51,7 @@ const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
         >
-          <Image src={heroImage} className="mx-auto h-full" alt="Hero Image" />
+          <Image src={heroImage} className="mx-auto h-full object-contain lg:object-none" alt="Hero Image" />
         </motion.div>
 
         {/* Анимация стрелки */}

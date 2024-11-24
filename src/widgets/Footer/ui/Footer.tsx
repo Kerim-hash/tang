@@ -6,10 +6,13 @@ import { DictionaryType } from "@/shared/config/i18n";
 import Link from "next/link";
 
 const Footer: FC<{ dictionary: DictionaryType; lang: string }> = ({ dictionary, lang }) => {
-  const navigation = dictionary.nav.map((name: string, index: number) => ({
-    name,
-    link: String(index),
-  }));
+  const navigation = [
+    { name: dictionary.nav, link: "" },
+    { name: dictionary.nav, link: "become-surrogate-mother" },
+    { name: dictionary.nav, link: "egg-donation" },
+    { name: dictionary.nav, link: "about" },
+    { name: dictionary.nav, link: "contacts" },
+  ];
 
   const Links = [
     { name: "WhatsApp", link: "" },
@@ -42,7 +45,7 @@ const Footer: FC<{ dictionary: DictionaryType; lang: string }> = ({ dictionary, 
                   isActiveLink(link) ? "!text-primary" : "hover:text-primary"
                 }`}
               >
-                {name}
+                {name[index]}
               </Link>
             ))}
           </nav>

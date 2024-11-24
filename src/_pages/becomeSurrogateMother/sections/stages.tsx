@@ -37,14 +37,14 @@ const MotionDiv: FC<{
 
 const Stages: FC<DictionaryInterface> = ({ dictionary }) => {
   return (
-    <motion.div className="container mt-[100px]">
+    <motion.div className="container mt-[100px]" id="section3">
       {/* Заголовок */}
       <MotionDiv
         index={1}
         initialProps={{ opacity: 0, y: 30 }}
         animateProps={{ opacity: 1, y: 0 }}
       >
-        <h2 className="title">{dictionary.becomeSurrogateMother.stages.title}</h2>
+        <h2 className="title mb-10">{dictionary.becomeSurrogateMother.stages.title}</h2>
       </MotionDiv>
 
       {/* Описание */}
@@ -53,11 +53,11 @@ const Stages: FC<DictionaryInterface> = ({ dictionary }) => {
         initialProps={{ opacity: 0, y: 20 }}
         animateProps={{ opacity: 1, y: 0 }}
       >
-        <p className="desc1 max-w-1/2">{dictionary.becomeSurrogateMother.stages.desc}</p>
+        <p className="desc1 max-w-1/2 text-textSecondary">{dictionary.becomeSurrogateMother.stages.desc}</p>
       </MotionDiv>
 
       {/* Карточки */}
-      <div className="grid gap-4 gap-y-10 mt-[60px] md:mt-[140px]">
+      <div className="grid gap-4 gap-y-10 mt-[60px] md:mt-[40px]">
         {/* Первые 6 карточек */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {dictionary.becomeSurrogateMother.stages.stagesProgram.slice(0, 6).map((info: CardInterface, index: number) => (
@@ -81,7 +81,7 @@ const Stages: FC<DictionaryInterface> = ({ dictionary }) => {
       </div>
 
       {/* Изображение и описание */}
-      <div className="flex flex-col sm:flex-row gap-5 mt-[100px]">
+      <div className="flex flex-col lg:flex-row gap-5 mt-[100px]">
 
         <Image className="rounded-4xl mx-auto" src={StagesImage} width={550} alt="become-surrogate-mother" />
 
@@ -92,7 +92,7 @@ const Stages: FC<DictionaryInterface> = ({ dictionary }) => {
       </div>
 
       {/* Список этапов */}
-      <div className="flex flex-wrap gap-4 gap-y-10 mt-[140px]">
+      <div className="flex flex-wrap gap-4 gap-y-10 mt-[140px]" id="section4">
         {dictionary.becomeSurrogateMother.stages.stagesList.map((info, index) => (
             <CardInfo key={index} index={index + 1} desc={info.desc} title={info.title} />
         ))}
