@@ -17,9 +17,3 @@ html {
 .motion-element {
     will-change: opacity, transform;
   }
-
-  @media (hover: none) {
-    *:hover {
-      all: unset;
-    }
-  }
