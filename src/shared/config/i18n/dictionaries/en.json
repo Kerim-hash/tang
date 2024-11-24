@@ -130,7 +130,67 @@
     "law": {
       "title": "In our country, surrogacy is safe and regulated by law",
       "supTitle": "Family Code of the Kyrgyz Republic"
-    }
+    },
+    "data": [
+      {
+        "title": "How is a Typical Pregnancy Different from Surrogacy?",
+        "content": {
+          "titles": ["Typical Pregnancy", "Surrogate Pregnancy"],
+          "data": [
+            {
+              "title": "Origin of the Embryo",
+              "desc": [
+                "In a typical pregnancy, a woman carries a child who is genetically related to her and usually the father.",
+                "In surrogacy, the woman (surrogate mother) carries a child who is genetically related to the genetic parents (usually the mother’s egg and the father’s sperm) or to donors, but not to herself."
+              ]
+            },
+            {
+              "title": "Reproductive Technology",
+              "desc": [
+                "Typical pregnancy occurs naturally through fertilization of an egg by sperm within a woman’s body.",
+                "Surrogacy involves assisted reproductive technology (IVF, or in vitro fertilization). An embryo created in the laboratory is transferred to the surrogate mother’s uterus."
+              ]
+            },
+            {
+              "title": "Role of the Woman",
+              "desc": [
+                "In a typical pregnancy, the woman is both the genetic mother (if using her own egg) and the carrying mother.",
+                "In surrogacy, assisted reproductive technology (IVF, or in vitro fertilization) is used. An embryo created in the laboratory is transferred to the surrogate mother’s uterus."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "How is a Typical Pregnancy Different from Surrogacy?",
+        "content": {
+          "titles": ["Typical Pregnancy", "Surrogate Pregnancy"],
+          "data": [
+            {
+              "title": "Origin of the Embryo",
+              "desc": [
+                "In a typical pregnancy, a woman carries a child who is genetically related to her and usually the father.",
+                "In surrogacy, the woman (surrogate mother) carries a child who is genetically related to the genetic parents (usually the mother’s egg and the father’s sperm) or to donors, but not to herself."
+              ]
+            },
+            {
+              "title": "Reproductive Technology",
+              "desc": [
+                "Typical pregnancy occurs naturally through fertilization of an egg by sperm within a woman’s body.",
+                "Surrogacy involves assisted reproductive technology (IVF, or in vitro fertilization). An embryo created in the laboratory is transferred to the surrogate mother’s uterus."
+              ]
+            },
+            {
+              "title": "Role of the Woman",
+              "desc": [
+                "In a typical pregnancy, the woman is both the genetic mother (if using her own egg) and the carrying mother.",
+                "In surrogacy, assisted reproductive technology (IVF, or in vitro fertilization) is used. An embryo created in the laboratory is transferred to the surrogate mother’s uterus."
+              ]
+            }
+          ]
+        }
+      }
+    ]
   },
   "about": {
     "hero": {

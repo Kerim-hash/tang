@@ -1,4 +1,5 @@
 import Accordion from "@/features/Accordion/ui/accordion-data";
+import { DictionaryInterface } from "@/shared/types/dictionary";
 import React, { FC } from "react";
 
 interface AccordionItem {
@@ -22,7 +23,7 @@ const AccordionData: FC<AccordionDataInterface> = ({ titles, data }) => {
       {Array.isArray(data) && data.length > 0 && data.map((item, index) => (
         <div key={index}>
           <p className="desc1 text-center mb-8">{item.title}</p>
-          <div className="flex justify-between mb-10">
+          <div className="flex justify-between mb-10 gap-2">
             {Array.isArray(item.desc) && item.desc.length > 0 && item.desc.map((el, idx) => (
               <p key={idx} className="flex-1 desc2">{el}</p>
             ))}
@@ -33,40 +34,19 @@ const AccordionData: FC<AccordionDataInterface> = ({ titles, data }) => {
   );
 };
 
-const Data = () => {
+const Data: FC<DictionaryInterface> = ({ dictionary }) => {
   return (
     <div className="container mt-[100px]">
-      <Accordion title="How is a Typical Pregnancy Different from Surrogacy?">
-        <AccordionData 
-          titles={['Обычная беременность', 'Суррогатная беременность']} 
-          data={[
-            {
-              title: 'Происхождение эмбриона',
-              desc: [
-                'В обычной беременности женщина вынашивает ребенка, который генетически связан с ней и, как правило, с отцом.',
-                'В суррогатной беременности женщина (суррогатная мать) вынашивает ребенка, который генетически связан с генетическими родителями (обычно это яйцеклетка матери и сперма отца) или с донорами, но не с ней самой.'
-              ]
-            },
-            {
-              title: 'Репродуктивная технология',
-              desc: [
-                'Обычная беременность происходит естественным образом в результате оплодотворения яйцеклетки сперматозоидом в организме женщины.',
-                'В суррогатной беременности используется вспомогательная репродуктивная технология (ЭКО, или экстракорпоральное оплодотворение). Эмбрион, созданный в лаборатории, переносится в матку суррогатной матери.'
-              ]
-            },
-            {
-              title: 'Роль женщины',
-              desc: [
-                'В обычной беременности женщина является как генетической матерью (если она использовала свою яйцеклетку), так и вынашивающей матерью.',
-                'В суррогатной беременности используется вспомогательная репродуктивная технология (ЭКО, или экстракорпоральное оплодотворение). Эмбрион, созданный в лаборатории, переносится в матку суррогатной матери.'
-              ]
-            }
-          ]}
-        />
-      </Accordion>
-      <Accordion title="Section 2">
-        <p>This is the content of section 2. Feel free to customize it.</p>
-      </Accordion>
+      {
+       Array.isArray(dictionary.family.data) && dictionary.family.data.map((data, index) => {
+          return <Accordion title={data.title}>
+            <AccordionData
+              titles={data.content.titles}
+              data={data.content.data}
+            />
+          </Accordion>
+        })
+      }
     </div>
   );
 };

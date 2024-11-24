@@ -13,16 +13,16 @@ const AboutPage: FC = () => {
 	const { dictionary } = useDictionary();
 
 	return (
-		<div className=''>
+		<main className='overflow-hidden'>
 			<Hero dictionary={dictionary} />
-			{/* <About dictionary={dictionary} /> */}
+			<About dictionary={dictionary} /> 
 				<div className='container mt-[50px] md:mt-[160px]'>
 				<RequestConsultation dictionary={dictionary} />
 			</div>
 			<Director dictionary={dictionary} />
 			<Info dictionary={dictionary} />
 			{/* <License dictionary={dictionary} /> */}
-		</div>
+		</main>
 	)
 };
 

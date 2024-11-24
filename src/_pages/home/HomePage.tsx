@@ -26,7 +26,7 @@ const HomePage: FC = () => {
 			<div className='container mt-[60px]  md:mt-[100px]'>
 				<RequestConsultation dictionary={dictionary} />
 			</div>
-			<Data />
+			<Data dictionary={dictionary} />
 			<Law dictionary={dictionary} />
 			<div className='container  mt-[60px]  md:mt-[100px]'>
 				<RequestConsultation dictionary={dictionary} />

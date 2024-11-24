@@ -17,7 +17,7 @@ import Anchor from "./sections/anchor";
 const BecomeSurrogateMotherPage = () => {
   const { dictionary } = useDictionary()
 
-  return <div>
+  return <main className="overflow-hidden">
     <Hero dictionary={dictionary} />
     <Description dictionary={dictionary} />
     <Anchor dictionary={dictionary} />
@@ -30,7 +30,7 @@ const BecomeSurrogateMotherPage = () => {
     <ContactUs dictionary={dictionary} />
     <Accreditation dictionary={dictionary} />
     {/* <License dictionary={dictionary} />  */}
-  </div>;
+  </main>;
 };
 
 export default BecomeSurrogateMotherPage;

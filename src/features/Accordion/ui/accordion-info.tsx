@@ -43,7 +43,7 @@ const AccordionBlock: React.FC = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }}
-              className="bg-background flex flex-col gap-y-10"
+              className="bg-background flex flex-col gap-y-10 pb-10"
             >
               {dictionary.family.about.conditions.map((item, index) => (
                 <motion.div

@@ -66,7 +66,7 @@ const About: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
 
         <motion.div className="flex-1" variants={imageVariants}>
           <Image
-            className="mx-auto rounded-md  md:rounded-9xl lg:max-w-[502px] max-h-[502px] object-cover max-w-[100%]"
+            className="mx-auto rounded-4xl  md:rounded-9xl lg:max-w-[502px] max-h-[502px] object-cover max-w-[100%]"
             src={aboutImage}
             alt="about"
             width={502}
