@@ -4,7 +4,16 @@
     "contact": "Contact",
     "RequestConsultation": "Get a consultation",
     "RequestConsultationSupTitle": "We will be happy to answer your questions",
-    "License": "Clinic licenses"
+    "License": "Clinic licenses",
+    "SelectTopicTitle": "Choose a consultation topic",
+    "SelectTopicDesc": "Please select the topic for which you need a consultation.",
+    "SearchSurrogate": "Looking for a surrogate mother",
+    "WantToBeSurrogate": "Want to become a surrogate mother",
+    "SearchAndWantToBeSurrogate": "Looking for and want to become a surrogate mother",
+    "Email": "Email",
+    "Question": "Your question",
+    "Cancel": "Cancel",
+    "Submit": "Submit"
   },
   "nav": ["Families", "Become a surrmother", "Egg donation", "About the clinic", "Contacts"],
   "family": {
@@ -321,7 +330,7 @@
           "title": "Gynecological examination",
           "desc": "swab from the external pharynx of the cervix, vaginal vault, urethra"
         },
-        { 
+        {
           "title": "Hormone tests",
           "desc": "Hormone tests can help confirm your ability to carry a pregnancy to term."
         },
@@ -335,7 +344,7 @@
         }
       ]
     },
-    "contactUs":{
+    "contactUs": {
       "title": "Contact us",
       "desc": "If you still have questions or want to learn more about the surrogacy program, our team is here to help. We will answer any questions, explain all the steps, conditions and provide full information about the process."
     },

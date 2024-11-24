@@ -1,10 +1,19 @@
 {
   "common": {
     "GetAConsultation": "Получить консультацию",
-    "contact": "Связаться",
-    "RequestConsultationSupTitle": "Мы с удовольствием ответим на ваши вопросы",
+    "contact": "Контакты",
     "RequestConsultation": "Получить консультацию",
-    "License": "Лицензии клиники"
+    "RequestConsultationSupTitle": "Мы будем рады ответить на ваши вопросы",
+    "License": "Лицензии клиники",
+    "SelectTopicTitle": "Выберите тему консультации",
+    "SelectTopicDesc": "Пожалуйста, выберите тему, по которой вам нужна консультация.",
+    "SearchSurrogate": "Ищу суррогатную мать",
+    "WantToBeSurrogate": "Хочу стать суррогатной матерью",
+    "SearchAndWantToBeSurrogate": "Ищу и хочу стать суррогатной матерью",
+    "Email": "Электронная почта",
+    "Question": "Ваш вопрос",
+    "Cancel": "Отмена",
+    "Submit": "Отправить"
   },
   "nav": ["Семьям", "Стать сурмамой", "Донорство яйцеклеток", "О клинике", "Контакты"],
   "family": {
