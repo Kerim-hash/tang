@@ -1,12 +1,13 @@
 import "@/app/styles/globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
+import Favicon from '../../public/favicon.ico';
 export const metadata: Metadata = {
+  icons: [{ rel: 'icon', url: Favicon.src }],
   title:
     "Суррогатное материнство | Центр Motherhood – Безопасность и профессионализм",
   description:
     "Центр Motherhood предлагает безопасные и качественные услуги суррогатного материнства для семей по всему миру. Узнайте больше о наших услугах!",
-    icons: {icon: {url: "icon-192x192.png", sizes: "32x32", rel: "icon",}},
 };
 
 export default function RootLayout({
@@ -39,8 +40,6 @@ export default function RootLayout({
           name="twitter:description"
           content="Профессиональные услуги суррогатного материнства."
         />
-        <link rel="icon" href="/icon-192x192.png" sizes="32x32" />
-        <link rel="icon" href="/icon-192x192.svg" sizes="32x32" />
       </head>
       <body>
         {children} <Script />{" "}
