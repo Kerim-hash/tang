@@ -3,7 +3,10 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Favicon from '../../public/favicon.ico';
 export const metadata: Metadata = {
-  icons: [{ rel: 'icon', url: Favicon.src }],
+  other: {
+    custom: 'meta',
+  },
+  icons: { icon:'/_next/static/media/favicon.ico',},
   title:
     "Суррогатное материнство | Центр Motherhood – Безопасность и профессионализм",
   description:
@@ -42,6 +45,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
         {children} <Script />{" "}
       </body>
     </html>
