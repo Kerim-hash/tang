@@ -11,7 +11,7 @@ const Accordion = ({ title, children }: { title: string; children: React.ReactNo
   };
 
   return (
-    <div className={`border ${isOpen ? "border-primary": "border-transparent"} accordion my-5 rounded-4xl overflow-hidden bg-background`}>
+    <div key={title} className={`border ${isOpen ? "border-primary": "border-transparent"} accordion my-5 rounded-4xl overflow-hidden bg-background`}>
       <div
         className="accordion-header bg-gray-100 py-6 px-8 cursor-pointer hover:bg-gray-200 flex items-center justify-between"
         onClick={toggleAccordion}

@@ -39,7 +39,7 @@ const Data: FC<DictionaryInterface> = ({ dictionary }) => {
     <div className="container mt-[100px]">
       {
        Array.isArray(dictionary.family.data) && dictionary.family.data.map((data, index) => {
-          return <Accordion title={data.title}>
+          return <Accordion title={data.title} key={data.title + index}>
             <AccordionData
               titles={data.content.titles}
               data={data.content.data}

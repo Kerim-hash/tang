@@ -1,12 +1,13 @@
 'use client';
 
-import React, { FC } from "react";
+import { forwardRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AboutImage from '@/assets/EggDonation/about.webp';
 import { DictionaryType } from "@/shared/config/i18n";
 
-const About: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
+const About = forwardRef<HTMLDivElement, { dictionary: DictionaryType }>(
+  ({ dictionary }, ref) => {
   return (
     <motion.div
       className="container mt-[60px] md:mt-[100px]"
@@ -16,6 +17,7 @@ const About: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
         hidden: { opacity: 0 },
         visible: { opacity: 1, transition: { duration: 0.8, staggerChildren: 0.2 } },
       }}
+      ref={ref}
     >
       <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-20">
         {/* Анимация изображения */}
@@ -102,6 +104,6 @@ const About: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
       </motion.div>
     </motion.div>
   );
-};
+});
 
 export default About;

@@ -7,7 +7,7 @@ import { DictionaryType } from '@/shared/config/i18n';
 import heroImage from '@/assets/EggDonation/hero.webp';
 import ArrowDown from '@/assets/arrow-down.svg';
 
-const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
+const Hero: FC<{ dictionary: DictionaryType, scrollToAbout: () => void }> = ({ dictionary, scrollToAbout}) => {
   return (
     <motion.div
       className="h-screen-minus-74 md:h-screen-minus-127 bg-background"
@@ -60,6 +60,7 @@ const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
+          onClick={scrollToAbout}
         >
           <Image src={ArrowDown} alt="arrow-down" />
         </motion.div>

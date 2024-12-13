@@ -3,35 +3,33 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { DictionaryType } from "@/shared/config/i18n";
 
 const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean, start?: boolean }> = ({ dictionary, sticky, start }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Для управления открытием модального окна
-  const [selectedTopic, setSelectedTopic] = useState<string | null>(null); // Для хранения выбранной темы
-  const [email, setEmail] = useState(""); // Для email
-  const [question, setQuestion] = useState(""); // Для вопроса
+  const [isModalOpen, setIsModalOpen] = useState(false); // For modal control
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null); // For storing selected topic
+  const [email, setEmail] = useState(""); // For email input
+  const [question, setQuestion] = useState(""); // For question input
 
-  // Открытие модального окна
+  // Open modal
   const openModal = () => setIsModalOpen(true);
 
-  // Закрытие модального окна
+  // Close modal
   const closeModal = () => setIsModalOpen(false);
 
-  // Функция для обработки выбранной темы
+  // Handle topic selection
   const handleTopicChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedTopic(event.target.value);
   };
 
-  // Функция для отправки формы
+  // Handle form submission
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    // Здесь можно обработать отправку данных формы (email, question, selectedTopic)
     console.log({ email, question, selectedTopic });
-    // Закрыть модальное окно после отправки
     closeModal();
   };
 
   return (
-    <div>
+    <div className="h-full">
       <motion.div
-        className={`${sticky ? "sticky" : ""} top-20 self-start py-4 px-6 bg-background min-h-[194px] h-full rounded-4xl ${start ? "text-start" : "text-center"}`}
+        className={`${sticky ? "sticky" : ""} md:max-h-[194px] top-20 self-start py-4 px-6 bg-background min-h-[194px] h-full rounded-4xl ${start ? "text-start" : "text-center"}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
@@ -39,17 +37,17 @@ const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean, st
         <h3 className="text-2xl font-medium text-textPrimary">{dictionary.common.RequestConsultationSupTitle}</h3>
         <button
           className="btn btn-primary btn-lg mt-10 w-full"
-          onClick={openModal} // Открыть модальное окно
+          onClick={openModal} // Open modal
         >
           {dictionary.common.RequestConsultation}
         </button>
       </motion.div>
 
-      {/* Модальное окно */}
+      {/* Modal */}
       <AnimatePresence>
         {isModalOpen && (
           <motion.div
-            className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50"
+            className="fixed inset-0 bg-gray-500 bg-opacity-50 backdrop-blur-lg flex justify-center items-center z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -62,13 +60,13 @@ const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean, st
               exit={{ scale: 0.8 }}
               transition={{ duration: 0.3 }}
             >
-              {/* Заголовок модального окна */}
+              {/* Modal Header */}
               <h2 className="text-2xl font-medium text-textPrimary">
                 {dictionary.common.SelectTopicTitle}
               </h2>
               <p className="mt-2 text-textSecondary">{dictionary.common.SelectTopicDesc}</p>
 
-              {/* Радиокнопки для выбора темы */}
+              {/* Radio Buttons for topic selection */}
               {!selectedTopic && (
                 <div className="mt-4 flex flex-col gap-4">
                   <div
@@ -113,7 +111,7 @@ const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean, st
                 </div>
               )}
 
-              {/* Форма для ввода email и вопросов */}
+              {/* Form for email and question input */}
               {selectedTopic && (
                 <form onSubmit={handleSubmit} className="mt-6">
                   <div>
@@ -152,7 +150,7 @@ const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean, st
                 </form>
               )}
 
-              {/* Закрыть модальное окно */}
+              {/* Close Modal Button */}
               {!selectedTopic && (
                 <button
                   onClick={closeModal}
@@ -167,35 +165,26 @@ const RequestConsultation: FC<{ dictionary: DictionaryType, sticky?: boolean, st
       </AnimatePresence>
 
       <style jsx>{`
-        /* Модальное окно растягивается на всю высоту экрана */
         .modal-content {
-          height: 100vh; /* Растягиваем на 100% высоты */
-          overflow-y: auto; /* Включаем прокрутку только в случае необходимости */
+          height: 100vh;
+          overflow-y: auto;
         }
 
-        /* Адаптивные стили для мобильных устройств */
         @media (max-width: 640px) {
           .bg-white {
             height: 100%;
             max-height: 100vh;
             overflow-y: auto;
           }
-
           .fixed {
             position: fixed;
           }
-
           .p-6 {
             padding: 16px;
           }
-
           .sm\\:w-96 {
             width: 100%;
             max-width: 100%;
-          }
-
-          .z-50 {
-            z-index: 50;
           }
         }
       `}</style>

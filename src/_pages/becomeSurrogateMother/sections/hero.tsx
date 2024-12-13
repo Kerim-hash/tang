@@ -5,9 +5,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import heroImage from "@/assets/BecomeSurrogateMother/hero.webp";
 import ArrowDown from "@/assets/arrow-down.svg";
-import { DictionaryInterface } from "@/shared/types/dictionary";
+import { DictionaryType } from "@/shared/config/i18n";
 
-const Hero: FC<DictionaryInterface> = ({ dictionary }) => {
+const Hero: FC<{ dictionary: DictionaryType,  scrollToAbout: () => void }> = ({ dictionary, scrollToAbout }) => {
   return (
     <motion.div
       className="h-screen-minus-74 md:h-screen-minus-127 bg-background relative"
@@ -56,6 +56,7 @@ const Hero: FC<DictionaryInterface> = ({ dictionary }) => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
+          onClick={scrollToAbout}
         >
           <Image src={ArrowDown} alt="arrow-down" />
         </motion.div>

@@ -5,7 +5,7 @@ import heroImage from '@/assets/About/hero.webp';
 import ArrowDown from '@/assets/arrow-down.svg';
 import { DictionaryType } from '@/shared/config/i18n';
 
-const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
+const Hero: FC<{ dictionary: DictionaryType, scrollToAbout: () => void }> = ({ dictionary, scrollToAbout }) => {
 	const arrowVariants = {
 		initial: { opacity: 0, y: 0 },
 		animate: {
@@ -83,6 +83,7 @@ const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
 					variants={arrowVariants}
 					initial="initial"
 					animate="animate"
+					onClick={scrollToAbout}
 				>
 					<Image src={ArrowDown} alt="arrow-down" />
 				</motion.div>

@@ -14,4 +14,5 @@ const Meta = ({ title, description }: MetaProps) => {
     );
 };
 
+
 export default Meta;

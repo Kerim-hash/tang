@@ -1,15 +1,16 @@
 'use client';
 
-import React, { FC, useState } from 'react';
+import { forwardRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { DictionaryType } from '@/shared/config/i18n';
 import AboutTang from '@/assets/About/about.webp';
 
-const About: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
+const About = forwardRef<HTMLDivElement, { dictionary: DictionaryType }>(
+  ({ dictionary }, ref) => {
   // Используем хук useInView для определения, когда элемент попадает в область видимости
-  const { ref, inView } = useInView({
+  const { ref: inViewRef, inView } = useInView({
     triggerOnce: true, // Срабатывает только один раз
     threshold: 0.2, // Доля видимой части элемента для активации
   });
@@ -25,8 +26,7 @@ const About: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
         visible: { opacity: 1, transition: { duration: 0.8, staggerChildren: 0.2 } },
       }}
     >
-      <div className="flex flex-col md:flex-row items-center">
-        {/* Анимация изображения */}
+      <div ref={inViewRef} className="flex flex-col md:flex-row items-center">
         <motion.div
           className="flex-1"
           variants={{
@@ -67,6 +67,6 @@ const About: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
       </div>
     </motion.div>
   );
-};
+});
 
 export default About;

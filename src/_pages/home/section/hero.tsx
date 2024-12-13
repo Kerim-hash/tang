@@ -5,7 +5,7 @@ import ArrowDown from "@/assets/arrow-down.svg";
 import { DictionaryType } from "@/shared/config/i18n";
 import { motion, Variants } from "framer-motion";
 
-const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
+const Hero: FC<{ dictionary: DictionaryType,  scrollToAbout: () => void }> = ({ dictionary, scrollToAbout }) => {
   // Анимации
   const backgroundVariants = {
     hidden: { height: 0 },
@@ -83,7 +83,6 @@ const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
       },
     },
   };
-
   return (
     <div className="relative h-screen-minus-74 md:h-screen-minus-127 overflow-hidden">
       {/* Анимируем фон */}
@@ -153,6 +152,7 @@ const Hero: FC<{ dictionary: DictionaryType }> = ({ dictionary }) => {
         variants={arrowVariants}
         initial="initial"
         animate="animate"
+        onClick={scrollToAbout}
       >
         <Image src={ArrowDown} alt="arrow-down" />
       </motion.div>
