@@ -43,9 +43,9 @@ export default function RootLayout({
           name="twitter:description"
           content="Профессиональные услуги суррогатного материнства."
         />
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
         {children} <Script />{" "}
       </body>
     </html>

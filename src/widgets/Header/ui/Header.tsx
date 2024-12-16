@@ -136,16 +136,7 @@ const Header: FC = () => {
             <a href="tel:+996556668989" className="block text-primary text-lg font-lato mb-4">
               +996 556 668 989
             </a>
-            <nav className="flex gap-4">
-              {["РУ", "КЫР", "EN", "中文"].map((item) => (
-                <button
-                  key={item}
-                  className="text-secondary text-base font-openSans hover:text-primary"
-                >
-                  {item}
-                </button>
-              ))}
-            </nav>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
