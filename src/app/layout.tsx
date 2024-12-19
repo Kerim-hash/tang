@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   other: {
     custom: 'meta',
   },
-  icons: { icon:'/_next/static/media/favicon.ico',},
+  icons: { icon:'/public/favicon.ico',},
   title:
     "Суррогатное материнство | Центр Motherhood – Безопасность и профессионализм",
   description:
