@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   other: {
     custom: 'meta',
   },
-  icons: { icon:'/public/favicon.ico',},
+  icons: { icon: Favicon.src },
   title:
     "Суррогатное материнство | Центр Motherhood – Безопасность и профессионализм",
   description:
@@ -43,7 +43,7 @@ export default function RootLayout({
           name="twitter:description"
           content="Профессиональные услуги суррогатного материнства."
         />
-      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="icon" href="/icon-192x192.png" sizes="any" />
       </head>
       <body>
         {children} <Script />{" "}

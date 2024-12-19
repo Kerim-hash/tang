@@ -3,8 +3,6 @@ import Meta from '@/widgets/Meta';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	
-	// icons: { icon:'/_next/static/media/favicon.ico',},
 	title:
 	  "Суррогатное материнство | О нас",
 	description:
