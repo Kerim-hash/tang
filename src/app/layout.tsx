@@ -1,10 +1,10 @@
 import "@/app/styles/globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
-import Favicon from '../../public/favicon.ico';
+import Favicon from "../../public/favicon.ico";
 export const metadata: Metadata = {
   other: {
-    custom: 'meta',
+    custom: "meta",
   },
   icons: { icon: Favicon.src },
   title:
@@ -24,7 +24,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="keywords"
-          content="суррогатное материнство, центр суррогатного материнства, услуги суррогатного материнства, суррогатная мать"
+          content="суррогатное материнство, ЭКО клиника Tang, услуги суррогатного материнства, суррогатная мать"
         />
         <meta
           property="og:title"
@@ -43,7 +43,7 @@ export default function RootLayout({
           name="twitter:description"
           content="Профессиональные услуги суррогатного материнства."
         />
-      <link rel="icon" href={Favicon.src} sizes="any" />
+        <link rel="icon" href={Favicon.src} sizes="any" />
       </head>
       <body>
         {children} <Script />{" "}

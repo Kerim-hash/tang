@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
 
   return (
     <nav className="flex gap-4">
-      {locales.map(({ code }) => (
+      {locales.map(({ code, name }) => (
         <button
           key={code}
           className={`uppercase text-base font-openSans hover:text-primary ${
@@ -27,7 +27,7 @@ const LanguageSwitcher = () => {
           }`}
           onClick={() => handleLocaleChange(code)} // Change language on button click
         >
-          {code}
+          {name}
         </button>
       ))}
     </nav>

@@ -11,8 +11,9 @@ interface ILocale {
 }
 
 export const locales: ILocale[] = [
-	{ code: 'en', name: 'English' },
-	{ code: 'ru', name: 'Русский' },
+	{ code: 'en', name: 'en' },
+	{ code: 'ru', name: 'ru' },
+	{ code: 'ch', name: '中文' },
 ];
 
 export const defaultLocale = locales[0].code;

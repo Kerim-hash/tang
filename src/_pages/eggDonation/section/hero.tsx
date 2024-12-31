@@ -4,7 +4,7 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { DictionaryType } from '@/shared/config/i18n';
-import heroImage from '@/assets/EggDonation/hero.webp';
+import heroImage from '@/assets/EggDonation/hero1.webp';
 import ArrowDown from '@/assets/arrow-down.svg';
 
 const Hero: FC<{ dictionary: DictionaryType, scrollToAbout: () => void }> = ({ dictionary, scrollToAbout}) => {

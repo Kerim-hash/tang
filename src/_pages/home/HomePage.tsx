@@ -28,7 +28,7 @@ const HomePage: FC = () => {
 		<main>
 			<Hero dictionary={dictionary} scrollToAbout={scrollToAbout} />
 			<About dictionary={dictionary} ref={aboutSectionRef} />
-			<Video dictionary={dictionary} />
+			{/* <Video dictionary={dictionary} /> */}
 			<Animation />
 			<Info dictionary={dictionary} />
 			<ProgramStages dictionary={dictionary} />

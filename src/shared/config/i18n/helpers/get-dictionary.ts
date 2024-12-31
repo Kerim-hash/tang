@@ -6,6 +6,7 @@ import { DictionaryType } from '../dictionaries/type';
 const dictionaries: Record<string, () => Promise<DictionaryType>> = {
 	ru: () => import('../dictionaries/ru.json').then((module) => module.default),
 	en: () => import('../dictionaries/en.json').then((module) => module.default),
+	ch: () => import('../dictionaries/ch.json').then((module) => module.default),
 };
 
 /**
